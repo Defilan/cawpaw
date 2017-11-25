@@ -6,7 +6,7 @@ set :public_folder, 'static'
 set :views, 'views'
 
 get '/' do
-  'Welcome to CawPaw: A tool for learning basic math'
+  erb :main
 end
 
 get '/add' do

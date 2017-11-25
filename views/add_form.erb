@@ -14,5 +14,16 @@
 	<input type="submit">
 </form>
 
+<%
+	quick_nav = [
+	['Home','/','Back to home'],
+]	
+%>
+
+<ul id"quickNav">
+	<% quick_nav.each do |item| %>
+	<li><a href="<%= item[1] %>" title="<%= item[2] %>"><%=item[0]%></a></li>
+<% end %>
+
 </body>
 </html>
