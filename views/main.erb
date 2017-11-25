@@ -1,0 +1,12 @@
+Welcome to CawPaw: A tool for learning basic math
+
+<%
+	quick_nav = [
+	['Add','/add', 'Addition']
+]	
+%>
+
+<ul id"quickNav">
+	<% quick_nav.each do |item| %>
+	<li><a href="<%= item[1] %>" title="<%= item[2] %>"><%=item[0]%></a></li>
+<% end %>
