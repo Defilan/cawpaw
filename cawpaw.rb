@@ -18,3 +18,13 @@ post '/add' do
   secondnum = params[:secondnum]
   erb :add, locals: { 'firstnum' => firstnum, 'secondnum' => secondnum }
 end
+
+get '/subtraction' do
+  erb :sub_form
+end
+
+post '/subtraction' do
+  firstnum = params[:firstnum]
+  secondnum = params[:secondnum]
+  erb :sub, locals: { 'firstnum' => firstnum, 'secondnum' => secondnum }
+end
