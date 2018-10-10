@@ -28,3 +28,13 @@ post '/subtraction' do
   secondnum = params[:secondnum]
   erb :sub, locals: { 'firstnum' => firstnum, 'secondnum' => secondnum }
 end
+
+get '/multiplication' do
+  erb :multiply_form
+end
+
+post '/multiplication' do
+  firstnum = params[:firstnum]
+  secondnum = params[:secondnum]
+  erb :multiply, locals: {'firstnum' => firstnum, 'secondnum' => secondnum}
+end
